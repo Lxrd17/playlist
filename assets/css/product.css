@@ -1,0 +1,100 @@
+@import url('webfonts/fonts.css');
+:root{
+  --rojo: #ff0000;
+  --verde: #1ed760;
+  --gris: #b8b8b7;
+  --negro: #000;
+  --blanco: #fff;
+  --modena: "SF Display";
+}
+body{
+  background-color: var(--verde);
+  font-family: var(--modena);
+}
+h2{
+  font-size: 55px;
+}
+a{
+  font-size: 20px;
+}
+li{
+  color: var(--negro);
+}
+.text-muted{
+  color: var(--negro);
+}
+.bg-gray{
+  background-color: var(--gris);
+}
+.bg-red{
+  background-color: var(--rojo);
+}
+.bg-black{
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+.tiutlo{
+  color: var(--negro);
+  font-size: 100px;
+  font-weight: 600;
+}
+.site-header {
+  background-color: var(--verde);
+}
+.site-header a {
+  color: var(--negro);
+  transition: ease-in-out color .15s;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: var(--rojo);
+  border-radius: 21px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: var(--rojo);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: var(--negro);
+}
+
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden { overflow: hidden; }
+@media(max-width: 500px){
+  .tiutlo{
+    font-size: 90px;
+  }
+}

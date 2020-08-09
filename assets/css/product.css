@@ -16,6 +16,7 @@ h2{
 }
 a{
   font-size: 20px;
+  color: var(--rojo);
 }
 li{
   color: var(--negro);
